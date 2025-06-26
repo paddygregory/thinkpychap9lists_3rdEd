@@ -7,4 +7,37 @@ def uses_all(word,required):
     return True
 
 #print(uses_all('hello','eoh'))
-print(uses_all('hello','eohz'))
+# print(uses_all('hello','eohz'))
+
+# EX. TWO
+
+def check_word(word,available,required):
+    if len(word)<4:
+        return False
+    if required not in word:
+        return False
+    for letter in word:
+        if letter not in available:
+            return False
+    return True
+
+list1 = ['o','a','c','r','t']
+#print(check_word('ratat', list1, 'r'))
+#print(check_word('razat', 'oalsh', 'r'))
+
+def score_word(word, available):
+    for letter in available:
+        if letter not in word:
+            return len(word)
+    return len(word) + 7
+
+listone = ['r', 'a', 't', 'a', 't', 'a']
+print(score_word('ratata', listone))  # Should print 13
+
+    
+
+
+        
+
+
+
