@@ -44,21 +44,4 @@ for line in open('word.txt'):
     word = line.strip()
     word_list.append(word)
     letters = len(word_list)
-print(letters)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+print(letters)  

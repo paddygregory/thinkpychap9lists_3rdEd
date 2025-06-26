@@ -32,12 +32,15 @@ def score_word(word, available):
     return len(word) + 7
 
 listone = ['r', 'a', 't', 'a', 't', 'a']
-print(score_word('ratata', listone))  # Should print 13
+#print(score_word('ratata', listone))  # Should print 13
 
-    
+    # EX. THREE
 
+def uses_none(word, forbidden):
+    for letter in forbidden:
+        if letter in word:
+            return False
+    return True
 
-        
-
-
-
+#print(uses_none('banana', 'xyz') )
+#print(uses_none('banana', 'bxyz') ) 
